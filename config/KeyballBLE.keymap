@@ -95,7 +95,7 @@
         default_layer {
             bindings = <
 &kp Q                   &kp W                &kp E              &kp R                  &kp T                                                  &kp Y        &kp U  &kp I       &kp O      &kp L
-&kp A                   &kp S                &kp D              &kp F                  &kp G        &mkp MCLK                &mo 6            &kp H        &kp J  &kp K       &kp B      &kp MINUS
+&kp A                   &kp S                &kp D              &lt 4 F                &kp G        &mkp MCLK                &mo 6            &kp H        &kp J  &kp K       &kp B      &kp MINUS
 &kp Z                   &kp X                &kp V              &kp C                  &kp P        &kp JP_LBRACKET          &kp JP_RBRACKET  &kp N        &kp M  &kp PERIOD  &kp COMMA  &kp SLASH
 &mt LEFT_CONTROL CARET  &mt LEFT_ALT ESCAPE  &kp JP_UNDERSCORE  &lt 4 INTERNATIONAL_4  &lt 1 SPACE  &mt LEFT_SHIFT INT5      &kp BACKSPACE    &lt 2 ENTER                                &to 4
             >;
