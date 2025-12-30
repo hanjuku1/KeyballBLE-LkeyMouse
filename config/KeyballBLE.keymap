@@ -141,15 +141,19 @@
 &PP1    &kp F1  &kp F2   &kp F3  &kp F12  &none          &trans      &kp N        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans
 &trans  &trans  &kp TAB  &trans  &trans   &trans         &kp DELETE  &lt 2 ENTER                                             &to 0
             >;
+
+            sensor-bindings = <&rotate>;
         };
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans       &kp LC(X)  &kp LC(C)  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans       &mkp LCLK  &trans     &mkp RCLK  &to 4
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans       &trans     &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans                      &trans       &kp LC(X)  &kp LC(C)  &trans     &kp LA(LEFT_ARROW)
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LC(V)    &mkp LCLK  &trans     &mkp RCLK  &to 4
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp N        &trans     &trans     &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &lt 2 ENTER                                   &to 0
             >;
+
+            sensor-bindings = <&rotate>;
         };
 
         layer_6 {
