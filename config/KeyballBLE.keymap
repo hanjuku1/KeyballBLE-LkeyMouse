@@ -108,7 +108,7 @@
 &none             &none              &none     &kp JP_TILDE  &kp SLASH                              &none             &kp JP_DQUOTE  &kp JP_AT      &kp JP_BACKQUOTE  &kp JP_CARET
 &kp EXCLAMATION   &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR    &kp PERCENT    &trans      &none       &kp JP_AMPERSAND  &kp JP_QUOTE   &kp JP_LPAREN  &kp JP_RPAREN     &kp QUESTION
 &none             &none              &kp V     &kp PLUS      &kp SEMICOLON  &trans      &trans      &kp JP_COLON      &trans         &trans         &trans            &kp INT_YEN
-&kp LEFT_CONTROL  &kp LEFT_WIN       &kp TAB   &trans        &trans         &trans      &kp DELETE  &lt 2 ENTER                                                       &to 0
+&kp JP_PLUS  &kp LEFT_WIN       &kp TAB   &trans        &trans         &trans      &kp DELETE  &lt 2 ENTER                                                       &to 0
             >;
         };
 
