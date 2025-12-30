@@ -95,7 +95,7 @@
         default_layer {
             bindings = <
 &kp Q                   &kp W                &kp E              &kp R                  &kp T                                                  &kp Y        &kp U  &kp I       &kp O      &kp L
-&kp A                   &kp S                &kp D              &kp A                  &kp G        &mkp MCLK                &mo 6            &kp H        &kp J  &kp K       &kp B      &kp MINUS
+&kp A                   &kp S                &kp D              &kp F                  &kp G        &mkp MCLK                &mo 6            &kp H        &kp J  &kp K       &kp B      &kp MINUS
 &kp Z                   &kp X                &kp V              &kp C                  &kp P        &kp JP_LBRACKET          &kp JP_RBRACKET  &kp N        &kp M  &kp PERIOD  &kp COMMA  &kp SLASH
 &mt LEFT_CONTROL CARET  &mt LEFT_ALT ESCAPE  &kp JP_UNDERSCORE  &lt 4 INTERNATIONAL_4  &lt 1 SPACE  &mt LEFT_SHIFT INT5      &kp BACKSPACE    &lt 2 ENTER                                &to 4
             >;
@@ -158,15 +158,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &to 0        &trans        &trans        &trans        &trans        &trans
 &trans  &none   &none   &none   &none   &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
-            >;
-        };
-
-        layer_7 {
-            bindings = <
-&trans                     &kp LC(W)  &kp LC(W)  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)                           &kp LC(W)      &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &trans  &trans
-&lt_to_layer_0 5 KP_MINUS  &trans     &mkp MB1   &mkp MB2         &mkp MB3           &trans      &trans       &mkp MB3       &mkp MB1         &mkp MB2           &trans  &lt_to_layer_0 5 KP_MINUS
-&trans                     &trans     &mkp MB4   &mkp MB5         &mkp MB5           &trans      &trans       &trans         &mkp MB4         &mkp MB5           &trans  &trans
-&trans                     &trans     &trans     &trans           &trans             &trans      &kp PAGE_UP  &kp PAGE_DOWN                                              &trans
             >;
         };
     };
