@@ -26,7 +26,6 @@
 #define JP_KANA         LANGUAGｊ       // かな
 #define JP_EISU         LANGUAGE_2        // 英数
 #define JP_HANZEN       GRAVE             // 半角/全角
-
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 25
 #define MOUSE 4
 #define SCROLL 5
@@ -96,7 +95,7 @@
         default_layer {
             bindings = <
 &kp Q                   &kp W                &kp E              &kp R                  &kp T                                                  &kp Y        &kp U  &kp I       &kp O      &kp L
-&kp A                   &kp S                &kp D              &kp F                  &kp G        &mkp MCLK                &mo 6            &kp H        &kp J  &kp K       &kp B      &kp MINUS
+&kp A                   &kp S                &kp D              &kp A                  &kp G        &mkp MCLK                &mo 6            &kp H        &kp J  &kp K       &kp B      &kp MINUS
 &kp Z                   &kp X                &kp V              &kp C                  &kp P        &kp JP_LBRACKET          &kp JP_RBRACKET  &kp N        &kp M  &kp PERIOD  &kp COMMA  &kp SLASH
 &mt LEFT_CONTROL CARET  &mt LEFT_ALT ESCAPE  &kp JP_UNDERSCORE  &lt 4 INTERNATIONAL_4  &lt 1 SPACE  &mt LEFT_SHIFT INT5      &kp BACKSPACE    &lt 2 ENTER                                &to 4
             >;
@@ -106,10 +105,10 @@
 
         FUNCTION {
             bindings = <
-            &none              &none     &kp JP_TILDE  &kp SLASH                              &none             &kp JP_DQUOTE  &kp JP_AT      &kp JP_BACKQUOTE  &kp JP_CARET
-&kp EXCLAMATION   &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR    &kp PERCENT    &trans      &none       &kp JP_AMPERSAND  &kp JP_QUOTE   &kp JP_LPAREN  &kp JP_RPAREN     &kp QUESTION
-&none             &none              &kp V     &kp PLUS      &kp SEMICOLON  &trans      &trans      &kp JP_COLON      &trans         &trans         &trans            &kp INT_YEN
-&kp LEFT_CONTROL  &kp LEFT_WIN       &kp TAB   &trans        &trans         &trans      &kp DELETE  &lt 2 ENTER                                                       &to 0
+&none              &none     &kp JP_TILDE  &kp SLASH      &none                                     &kp JP_DQUOTE  &kp JP_AT      &kp JP_BACKQUOTE  &kp JP_CARET  &kp EXCLAMATION
+&kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR    &kp PERCENT    &trans  &none           &kp JP_AMPERSAND  &kp JP_QUOTE   &kp JP_LPAREN  &kp JP_RPAREN     &kp QUESTION  &none
+&none              &kp V     &kp PLUS      &kp SEMICOLON  &trans  &trans          &kp JP_COLON      &trans         &trans         &trans            &kp INT_YEN   &kp LEFT_CONTROL
+&kp LEFT_WIN       &kp TAB   &trans        &trans         &trans  &kp DELETE      &lt 2 ENTER       &to 0
             >;
         };
 
@@ -118,15 +117,7 @@
 &kp SLASH         &kp N7   &kp N8  &kp N9  &kp SLASH                              &kp SLASH        &kp N7  &kp N8  &kp N9  &kp SLASH
 &kp JP_ASTERISK   &kp N4   &kp N5  &kp N6  &kp N0      &none       &none          &kp JP_ASTERISK  &kp N4  &kp N5  &kp N6  &kp N0
 &kp MINUS         &kp N1   &kp N2  &kp N3  &kp PERIOD  &none       &kp JP_PLUS    &kp MINUS        &kp N1  &kp N2  &kp N3  &kp PERIOD
-&kp LEFT_CONTROL  &kp TAB  &trans  &trans  &trans      &trans      &kp BACKSPACE  &lt 2 ENTER
-        };
-
-        ARROW {
-            bindings = <
-&none   &none   &none   &none   &trans                      &trans  &trans  &trans  &trans  &trans
-&none   &none   &none   &none   &none   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&none   &none   &trans  &none   &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&kp LEFT_CONTROL  &kp TAB  &trans  &trans  &trans      &trans      &kp BACKSPACE  &lt 2 ENTER                              &none
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -137,9 +128,8 @@
 &PP3    &kp F7  &kp F8   &kp F9  &kp F10                             &none        &kp LC(X)       &kp LC(C)       &trans     &kp LA(LEFT)
 &PP2    &kp F4  &kp F5   &kp F6  &kp F11  &mkp MCLK      &trans      &kp LC(V)    &mkp LCLK       &kp UP_ARROW    &mkp RCLK  &to 5
 &PP1    &kp F1  &kp F2   &kp F3  &kp F12  &none          &trans      &kp N        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans
-&trans  &trans  &kp TAB  &trans  &trans   &trans         &kp DELETE  &lt 2 ENTER                                             &to 0
-
-            sensor-bindings = <&inc_dec_kp 0 0>;
+&trans  &trans  &kp TAB  &trans  &trans   &trans         &kp DELETE  &lt 2 ENTER                                             &to 0 sensor
+            >;
         };
 
         SCROLL {
