@@ -102,7 +102,7 @@
 &mt LEFT_CONTROL CARET  &mt LEFT_ALT ESCAPE  &kp JP_UNDERSCORE  &lt 4 INTERNATIONAL_4  &lt 1 SPACE  &mt LEFT_SHIFT INT5      &kp BACKSPACE    &lt 2 ENTER                                &to 4
             >;
 
-            sensor-bindings = <&rotate>;
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         FUNCTION {
